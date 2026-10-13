@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff0f6">
+<meta name="description" content="A tiny, funny, soft-hearted corner of the internet made for Pannu.">
+<title>Pannu's lil universe ♡</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B7%3C/text%3E%3C/svg%3E">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+:root{--pink:#ff4f91;--rose:#ff8fb6;--plum:#69314f;--ink:#382b34;--cream:#fffaf7;--pale:#fff0f6;--gold:#ffe6a8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.22;background-image:radial-gradient(#ff91b5 1px,transparent 1px);background-size:20px 20px}
+button,a{font:inherit}.topbar{display:flex;align-items:center;justify-content:space-between;padding:17px clamp(17px,5vw,68px);gap:12px}
+.logo{font-weight:800;letter-spacing:-.05em;color:var(--plum);font-size:1.05rem}.logo b{color:var(--pink)}
+.top-pill{font-size:.78rem;background:#fff;border:1px solid #f8c7da;border-radius:99px;padding:9px 13px;color:var(--plum)}
+.hero{max-width:1120px;margin:auto;min-height:82vh;padding:30px 24px 65px;display:grid;grid-template-columns:1fr .9fr;gap:45px;align-items:center}
+.kicker{color:var(--pink);text-transform:uppercase;font-size:.74rem;letter-spacing:.15em;font-weight:800}
+h1,h2,h3{font-family:'Playfair Display',serif;letter-spacing:-.045em}h1{font-size:clamp(3.5rem,8vw,7rem);line-height:.9;margin:19px 0}
+h1 em{color:var(--pink)}.hero-copy>p{max-width:490px;font-size:1.04rem;line-height:1.85;color:#775d6b}
+.btnrow{display:flex;gap:11px;flex-wrap:wrap;margin-top:24px}.btn{border:0;border-radius:99px;padding:13px 18px;cursor:pointer;text-decoration:none;font-weight:800;font-size:.9rem;transition:transform .2s,box-shadow .2s;display:inline-flex;justify-content:center;align-items:center;gap:7px}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 25px #7a31551c}.primary{background:var(--pink);color:white;box-shadow:0 8px 24px #ff4f9133}.soft{background:white;color:var(--plum);border:1px solid #f4c5d8}.gold{background:var(--gold);color:#76523c}
+.photo-stack{position:relative;width:100%;max-width:420px;margin:auto;padding:14px}.frame{background:white;padding:12px 12px 53px;box-shadow:0 22px 60px #63314d20;transform:rotate(2.7deg);position:relative}
+.frame img{width:100%;height:500px;object-fit:cover;object-position:center 42%;display:block}.caption{position:absolute;bottom:17px;left:0;right:0;text-align:center;font-family:'Playfair Display',serif;font-style:italic;color:#825a6e}
+.sticker{position:absolute;right:-8px;top:-1px;z-index:2;background:var(--gold);width:91px;height:91px;border-radius:50%;display:grid;place-items:center;text-align:center;font-size:.78rem;font-weight:800;transform:rotate(10deg);box-shadow:0 9px 22px #63314d18}
+.float-heart{position:absolute;color:var(--pink);font-size:2rem;animation:float 3s ease-in-out infinite}.fh1{left:-8px;bottom:65px}.fh2{right:5px;bottom:5px;animation-delay:.8s}
+section{padding:76px 22px}.inner{max-width:1000px;margin:auto}.section-head{text-align:center;margin-bottom:34px}.section-head h2{font-size:clamp(2.4rem,5vw,4rem);margin:9px 0 10px}.section-head p{line-height:1.75;color:#856d7a}
+.dump{display:grid;grid-template-columns:1fr 1fr;gap:23px;max-width:790px;margin:auto;align-items:center}.dump-card{background:#fff;padding:11px 11px 17px;box-shadow:0 15px 35px #69314f13;border-radius:6px;transform:rotate(-2deg)}.dump-card:nth-child(2){transform:rotate(2deg);margin-top:30px}
+.dump-card img{width:100%;height:350px;object-fit:cover;display:block}.dump-card p{text-align:center;font-family:'Playfair Display',serif;color:#80546b;margin:13px 4px 0;font-size:1.05rem}
+.note{max-width:760px;margin:45px auto 0;padding:30px clamp(22px,5vw,48px);border:1px solid #ffd1e1;border-radius:25px;background:#fff0f5;position:relative}.note:after{content:'♡';position:absolute;right:20px;top:3px;font-size:3.2rem;color:#ff9abc}.note h3{font-size:1.8rem;color:var(--plum);margin:0 0 12px}.note p{line-height:1.95;color:#735b68;margin:0}
+.poem{background:#fff7e7;border-radius:26px;padding:35px 22px;text-align:center;margin-top:24px}.poem .lines{font-family:'Playfair Display',serif;font-style:italic;color:#7a435f;font-size:clamp(1.15rem,2.7vw,1.55rem);line-height:1.9}
+.funzone{background:linear-gradient(140deg,#fff0f6,#fff9ed)}.fun-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.fun-card{background:#fff;border:1px solid #f8d4e1;border-radius:22px;padding:22px 18px;text-align:center;box-shadow:0 10px 28px #69314f09}.fun-card .emoji{font-size:2rem}.fun-card h3{font-size:1.25rem;margin:10px 0 7px;color:var(--plum)}.fun-card p{font-size:.88rem;line-height:1.65;color:#876c7a;min-height:44px}.fun-card .btn{width:100%;padding:11px 12px;font-size:.82rem}.result{min-height:28px;margin-top:12px;font-weight:700;color:var(--pink);font-size:.88rem;line-height:1.5}
+.invite{text-align:center;background:linear-gradient(135deg,#ffedf4,#fff8e8)}.invite h2{font-size:clamp(2.7rem,6vw,5rem);margin:12px 0}.invite .big{max-width:680px;margin:auto;font-size:1.04rem;line-height:1.95;color:#735968}
+.choices{display:flex;justify-content:center;gap:11px;flex-wrap:wrap;margin:25px 0 10px}.response{min-height:30px;color:var(--plum);font-weight:800;margin-top:18px;line-height:1.6}
+footer{text-align:center;padding:45px 20px 110px;color:#9b7b8b;font-size:.84rem}
+.musicbar{position:fixed;bottom:15px;left:50%;transform:translateX(-50%);z-index:10;display:flex;align-items:center;gap:11px;background:#fffdf7ed;border:1px solid #f5c9d9;border-radius:99px;padding:8px 14px;box-shadow:0 8px 28px #5b2c431a;backdrop-filter:blur(10px);max-width:calc(100% - 22px)}
+.musicbtn{border:0;background:var(--pink);color:#fff;border-radius:50%;width:39px;height:39px;font-size:1rem;cursor:pointer;flex-shrink:0}.musictext{font-size:.75rem;line-height:1.4;white-space:nowrap}.musictext strong{display:block;color:var(--plum)}.musictext span{color:#9a7185}
+.confetti{position:fixed;top:-20px;z-index:99;pointer-events:none;animation:fall 2.8s linear forwards;font-size:20px}@keyframes fall{to{transform:translateY(110vh) rotate(650deg);opacity:.2}}@keyframes float{50%{transform:translateY(-8px) rotate(9deg)}}
+.hidden{display:none!important}.tiny{font-size:.8rem;color:#987b89;margin-top:22px}
+@media(max-width:760px){.hero{grid-template-columns:1fr;gap:25px;min-height:auto;padding-top:22px}.hero-copy{text-align:center}.hero-copy>p{margin:0 auto}.btnrow{justify-content:center}.photo-stack{max-width:350px}.frame img{height:420px}.dump-card img{height:280px}.fun-grid{grid-template-columns:1fr}.fun-card p{min-height:0}.topbar{padding:14px 17px}section{padding:58px 18px}}
+@media(max-width:430px){.dump{grid-template-columns:1fr;max-width:330px}.dump-card,.dump-card:nth-child(2){margin:0;transform:rotate(-1deg)}.dump-card:nth-child(2){transform:rotate(1.5deg)}.dump-card img{height:330px}.frame img{height:390px}.top-pill{font-size:.68rem}}
+</style>
+</head>
+<body>
+<nav class="topbar"><div class="logo">pannu's lil universe <b>♡</b></div><div class="top-pill">100% cute · thoda pagal ✨</div></nav>
+<header class="hero">
+ <div class="hero-copy">
+  <div class="kicker">ek chhoti si internet wali surprise 🌷</div>
+  <h1>Oye<br><em>Pannu!</em> ♡</h1>
+  <p>Tere naal gallan karde-karde time fast-forward ho janda ae 😭 Bas sochya, tere layi ik chhota jeha corner bana devaan — thoda cute, thoda funny, te full of good vibes.</p>
+  <div class="btnrow"><a class="btn primary" href="#photo-dump">photo dump khol 📸</a><button class="btn soft" onclick="compliment()">random compliment le ✨</button></div>
+  <div class="result" id="heroResult" aria-live="polite"></div>
+ </div>
+ <div class="photo-stack"><div class="sticker">certified<br>cutie patootie<br>🎀</div><span class="float-heart fh1">♡</span><span class="float-heart fh2">✦</span><div class="frame"><img src="assets/pannu1.jpg" alt="Pannu in a pink suit"><div class="caption">pink suit, pretty vibe, full slay 🌸</div></div></div>
+</header>
+
+<section id="photo-dump"><div class="inner">
+ <div class="section-head"><div class="kicker">camera roll but make it cute</div><h2>Little Pannu Dump 📸</h2><p>Two pics, infinite cute energy. Gallery di main character. ♡</p></div>
+ <div class="dump">
+  <article class="dump-card"><img src="assets/pannu1.jpg" alt="Pannu photo one"><p>pink suit = slay level 100 💗</p></article>
+  <article class="dump-card"><img src="assets/pannu2.jpg" alt="Pannu photo two"><p>pretty face, softer heart 🌷</p></article>
+ </div>
+ <div class="note"><h3>Ik gall dassan, Pannu? 💌</h3><p>Tu bohot changi te thoughtful insaan aa. Tere naal gall karke mood halka ho janda, te ghante vi minutes varge lagde ne. Main tenu koi pressure den layi eh nahi bana reha — bas apni appreciation cute jehe tareeke naal kehni si. Tu jivein aa, ovein hi reh. Tera sukoon te teri smile dono important ne. 🫶</p></div>
+ <div class="poem"><div class="kicker">thodi jehi filmy gall</div><div class="lines">Main tenu booti-ala suit lawaanga,<br>tere nakhre vi pyaar naal utha laanga,<br>tenu Punjabi jutti vi devaanga,<br>pizza vi khavaanga, waffle vi khareed laanga. 🧇<br><span style="font-size:.92rem">Bas tu hassdi reh… baaki gallan holi-holi. ♡</span></div></div>
+</div></section>
+
+<section class="funzone" id="fun"><div class="inner">
+ <div class="section-head"><div class="kicker">important scientific research 🔬</div><h2>Pannu Testing Lab</h2><p>Buttons dabaa ke apni kismat azmaa, madam ji. 😂</p></div>
+ <div class="fun-grid">
+  <article class="fun-card"><div class="emoji">🧇</div><h3>Waffle Calculator</h3><p>Calculate kinne waffles deserve kardi aa.</p><button class="btn primary" onclick="waffleTest()">calculate my waffles</button><div class="result" id="waffleResult"></div></article>
+  <article class="fun-card"><div class="emoji">🪄</div><h3>Compliment Machine</h3><p>Machine thodi biased aa, par facts hi boldi aa.</p><button class="btn soft" onclick="compliment()">compliment me pls</button><div class="result" id="complimentResult"></div></article>
+  <article class="fun-card"><div class="emoji">🧠</div><h3>Vibe Check</h3><p>Extremely unofficial. 100% dramatic results.</p><button class="btn gold" onclick="vibeCheck()">check my vibe</button><div class="result" id="vibeResult"></div></article>
+  <article class="fun-card"><div class="emoji">📸</div><h3>Future Photo Energy</h3><p>Ik future memory da trailer dekhiye?</p><button class="btn soft" onclick="photoMagic()">show photo energy</button><div class="result" id="photoResult"></div></article>
+  <article class="fun-card"><div class="emoji">🎲</div><h3>Random Plan Generator</h3><p>Jadon “ki kariye?” da answer na labhe.</p><button class="btn primary" onclick="randomPlan()">surprise me</button><div class="result" id="planResult"></div></article>
+  <article class="fun-card"><div class="emoji">🫣</div><h3>Blush Meter</h3><p>Warning: thoda jeha cringe, par pyaar naal.</p><button class="btn gold" onclick="blushMeter()">test my blush</button><div class="result" id="blushResult"></div></article>
+ </div>
+</div></section>
+
+<section class="invite" id="little-plan"><div class="inner">
+ <div class="kicker">officially manifesting a cute campus memory</div><h2>Waffle + walk? 🧇🌙</h2>
+ <p class="big">Tu haan keh ditti, te main ajj vi thoda excited aa yaar 😭💗 Ik waffle, campus ch slow jehi walk, random gallan, thodi hasi… te je tenu vi theek lage, ik photo together? No pressure bilkul — bas ik memory jo baad ch vekh ke smile aa jaave.</p>
+ <div class="choices"><button class="btn primary" onclick="inviteReply('yes')">haanji, cute plan aa 🌷</button><button class="btn soft" onclick="inviteReply('photo')">photo vi pakki? 📸</button><button class="btn gold" onclick="inviteReply('shy')">oho, blush karwa ditta 🙈</button></div>
+ <div class="response" id="inviteResponse" aria-live="polite"></div>
+ <button class="btn soft" onclick="confettiParty()">press for tiny celebration 🎉</button>
+ <p class="tiny">P.S. je koi kahe “I like you”, taan tu keh sakdi aa: “oh taan mainu hor vi zyada pasand karda aa” 😂 But seriously, je koi annoy kare, apni comfort nu first rakhin. ♡</p>
+</div></section>
+<footer><div style="font-size:1.6rem">🌷 ♡ ✨</div><p>Made for Pannu — no pressure, just good vibes and a little smile.</p><p>from someone who could talk to you for hours ♡</p></footer>
+
+<div class="musicbar"><button class="musicbtn" id="musicToggle" aria-label="Play music">▶</button><div class="musictext"><strong>little soundtrack 🎧</strong><span>tap play · pause whenever you want</span></div><audio id="song" preload="metadata" loop><source src="assets/suit-song.mp3" type="audio/mpeg"></audio></div>
+<script>
+const song=document.getElementById('song'),toggle=document.getElementById('musicToggle');
+toggle.addEventListener('click',async()=>{if(song.paused){try{await song.play();toggle.textContent='❚❚';toggle.setAttribute('aria-label','Pause music')}catch(e){document.querySelector('.musictext span').textContent='Audio file check kar lo 💗'}}else{song.pause();toggle.textContent='▶';toggle.setAttribute('aria-label','Play music')}});
+function pick(arr){return arr[Math.floor(Math.random()*arr.length)]}
+const compliments=[
+ 'Teri smile da alag hi fan club banna chahida. 🌷',
+ 'Pretty taan aa hi, par tera nature vi top tier aa. ♡',
+ 'Tu na, normal gall nu vi memory bana dindi aa. ✨',
+ 'Pannu.exe has stopped working: too much cuteness detected. 😂',
+ 'Tere naal gallan = time di sab ton fast train. 🚂💗',
+ 'Main character energy, bina kise audition de. 🎀'
+];
+function compliment(){let msg=pick(compliments);document.getElementById('heroResult').textContent=msg;document.getElementById('complimentResult').textContent=msg}
+function waffleTest(){document.getElementById('waffleResult').textContent=pick(['2 waffles. Ik tere layi, ik… vi tere layi. 😭🧇','Waffle limit: infinity. Budget: discuss later. 😂','Doctor says: one waffle minimum for maximum khushi. 🧇','Result: waffle date urgently required. 📢'])}
+function vibeCheck(){document.getElementById('vibeResult').textContent=pick(['98% sunshine, 2% “main kuch ni kita” 😇','Vibe: soft heart + full comedy. 💗','Certified green flag energy (with extra sprinkles). 🌱','Dangerously cute. Please proceed with waffles. 🚨'])}
+function photoMagic(){document.getElementById('photoResult').textContent=pick(['Forecast: 1 cute photo, 17 retakes, 18th one iconic. 📸','Pose idea: candid laugh. Baaki natural hi best aa. ♡','Camera roll prediction: “eh wali delete na kari!” 😂','Photo only if both say yes — memory first, pose later. 🌷'])}
+function randomPlan(){document.getElementById('planResult').textContent=pick(['Waffle + 10-minute walk that becomes 40 minutes. 🧇','Find the prettiest campus corner and rate the vibes. 🌙','Pick a random snack and tell each other a funny story. 😂','Slow walk, no rush, playlist talk. 🎧','Mini photo mission: one candid each, only if comfortable. 📸'])}
+function blushMeter(){document.getElementById('blushResult').textContent=pick(['Blush level: 7/10. Paani pee lo madam. 🙈','System overload. Please restart with one waffle. 😭','Cheeks.exe loading… 🌸','Blush detected. Case closed. 👩‍⚖️💗'])}
+function inviteReply(type){const m={yes:'YAYYY 😭💗 waffle te campus walk — plan ta already cute aa!',photo:'Photo da scene on, par sirf je tu vi comfortable hove. 📸♡',shy:'Hehe bas thoda jeha blush, poora overload nahi 🙈🌷'};document.getElementById('inviteResponse').textContent=m[type]}
+function confettiParty(){const bits=['💗','🌷','✨','🎀','🧇','♡'];for(let i=0;i<34;i++){const el=document.createElement('span');el.className='confetti';el.textContent=pick(bits);el.style.left=Math.random()*100+'vw';el.style.animationDelay=Math.random()*.8+'s';el.style.fontSize=(14+Math.random()*18)+'px';document.body.appendChild(el);setTimeout(()=>el.remove(),3600)}}
+</script>
+</body></html>
